@@ -1,0 +1,30 @@
+//
+h1{
+    font-size: 36px;
+}
+.center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav{
+    margin-bottom: 40px;
+    padding: 0px 10px;
+    &.navbar {
+        &.menu-border {
+            border-bottom: 1px solid #e6e6e6;
+        }
+        li {
+            display: inline-block;
+            a{
+                padding: 15px;
+            }
+            &.is-active{
+                a{
+                    background: #00D1B2;
+                    color: #fff;
+                }
+                
+            }
+        }
+    }
+}

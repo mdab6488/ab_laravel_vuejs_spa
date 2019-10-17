@@ -1,0 +1,31 @@
+h1 {
+  font-size: 36px;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 40px;
+  padding: 0px 10px;
+}
+
+nav.navbar.menu-border {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+nav.navbar li {
+  display: inline-block;
+}
+
+nav.navbar li a {
+  padding: 15px;
+}
+
+nav.navbar li.is-active a {
+  background: #00D1B2;
+  color: #fff;
+}
+
