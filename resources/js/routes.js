@@ -15,6 +15,10 @@ const routes = [
         path: '/carousel',
         component: require('./views/Carousel').default,
     },
+    {
+        path: '/testimonials_components',
+        component: require('./views/TestimonialComp').default,
+    },
 ];
 
 export default new VueRouter({

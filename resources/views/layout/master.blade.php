@@ -39,6 +39,9 @@
                             <router-link tag="li" to="/carousel">
                                 <a class="navbar-item">Carousel</a>
                             </router-link>
+                            <router-link tag="li" to="/testimonials_components">
+                                <a class="navbar-item">Ts Comp</a>
+                            </router-link>
                         </div>
                     </div>
                 </nav>

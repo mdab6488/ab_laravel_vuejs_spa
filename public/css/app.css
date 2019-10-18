@@ -35,6 +35,89 @@ section.hero {
 }
 
 .margin-bottom {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
+}
+
+.margin-bottom-70 {
+  margin-bottom: 70px !important;
+}
+
+.testimonials {
+  background: #F3F5F6;
+  position: relative;
+}
+
+.testimonials .left {
+  width: 70%;
+  min-height: 400px;
+  padding: 0px 52px;
+  display: table;
+  height: 100%;
+}
+
+.testimonials .left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.testimonials .left ul li {
+  display: inline-block;
+  margin-right: 26px;
+  margin-bottom: 15px;
+}
+
+.testimonials .left ul li img {
+  transition: 0.2s;
+  border-radius: 50%;
+  width: 62px;
+  border: 2px;
+  border-style: unset;
+}
+
+.testimonials .left ul li img.active {
+  border-color: #00D1B2;
+  border-style: solid;
+}
+
+.testimonials .left ul li img:hover {
+  border-color: #00D1B2;
+  border-style: solid;
+}
+
+.testimonials .right {
+  background: #EBF1F3;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  display: table;
+  height: 100%;
+  left: 70%;
+  padding: 0px 15px;
+}
+
+.testimonials .right .review-user-infos {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .right img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+.testimonials .right h5 {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.testimonials .right button {
+  margin-top: 20px;
 }
 
