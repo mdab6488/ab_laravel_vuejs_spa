@@ -12,11 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 
+// Route::get('/statues', function () {
+// 	return App\Status::with('user')->latest()->get();
+// });
 
-Route::get('/statues', function()
-{
-	return App\Status::with('user')->latest()->get();
-});
+Route::get('/statues', 'StatusController@index');
+Route::post('/statues', 'StatusController@store');

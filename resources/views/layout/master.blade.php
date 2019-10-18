@@ -42,9 +42,7 @@
                         </div>
                     </div>
                 </nav>
-                <div class="container">
-                    <router-view></router-view>
-                </div>
+                <router-view></router-view>
             </div>
         </div>
         <script src="/js/app.js"></script>

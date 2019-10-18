@@ -1,29 +1,41 @@
 // npm install moment --save
 <template>
-    <div>
-        <div class="center">
-            <h1>Home Page</h1>
-        </div>
-        <div class="box">
-            <article class="media"
-                        v-for="status in statues">
-                <div class="media-left">
-                    <figure class="image is-64x64">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                    </figure>
+    <div class="margin-bottom">
+        <section class="hero is-link is-medium">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p class="title">
+                        Home Page
+                    </p>
                 </div>
-                <div class="media-content"> 
-                    <div class="content">
-                        <p>
-                            <strong>{{status.user.name}}</strong>
-                            <small>@johnsmith</small> 
-                            <small>{{ status.created_at | ago | capitalize }}</small>
-                            <br>
-                            {{ status.body }}
-                        </p>
+            </div>
+        </section>
+        <div class="container">
+            <div class="box">
+                <article class="media"
+                            v-for="status in statues">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                        </figure>
                     </div>
-                </div>
-            </article>
+                    <div class="media-content"> 
+                        <div class="content">
+                            <p>
+                                <strong>{{status.user.name}}</strong>
+                                <small>@johnsmith</small> 
+                                <small>{{ status.created_at | ago | capitalize }}</small>
+                                <br>
+                                {{ status.body }}
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="add-to-stream">
+                <!-- add to stream form -->
+                <add-to-stream @completed="addStatus"></add-to-stream>
+            </div>
         </div>
     </div>
 </template>
@@ -32,7 +44,12 @@
     // Vue Filter Data
     import moment from 'moment';
     import Status from '../models/Status'
+
+    import AddToStream from '../components/AddToStream'
+
     export default {
+        components: { AddToStream },
+
         data() {
             return {
                 statues: [],
@@ -51,6 +68,16 @@
         created() {
             //fire of an ajax request
             Status.all(statues => this.statues = statues);
+        },
+
+        methods: {
+            addStatus(status) {
+                this.statues.unshift(status);
+
+                alert('Your Status Added To The Stream!');
+
+                window.scrollTo(0, 0);
+            }
         },
     }
 
