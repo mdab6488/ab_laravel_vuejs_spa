@@ -8,8 +8,8 @@ const routes = [
         component: require('./views/Home').default,
     },
     {
-        path: '/about',
-        component: require('./views/About').default,
+        path: '/scopedslots',
+        component: require('./views/ScopedSlots').default,
     },
     {
         path: '/contact',

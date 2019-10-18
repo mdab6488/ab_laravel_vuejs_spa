@@ -33,8 +33,8 @@
                             <router-link tag="li" to="/" exact>
                                 <a class="navbar-item">Home</a>
                             </router-link>
-                            <router-link tag="li" to="/about">
-                                <a class="navbar-item">About</a>
+                            <router-link tag="li" to="/scopedslots">
+                                <a class="navbar-item">Scoped Slots</a>
                             </router-link>
                             <router-link tag="li" to="/contact">
                                 <a class="navbar-item">Contact</a>
