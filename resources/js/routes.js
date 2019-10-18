@@ -12,8 +12,8 @@ const routes = [
         component: require('./views/ScopedSlots').default,
     },
     {
-        path: '/contact',
-        component: require('./views/Contact').default,
+        path: '/carousel',
+        component: require('./views/Carousel').default,
     },
 ];
 

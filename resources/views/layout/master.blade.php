@@ -36,8 +36,8 @@
                             <router-link tag="li" to="/scopedslots">
                                 <a class="navbar-item">Scoped Slots</a>
                             </router-link>
-                            <router-link tag="li" to="/contact">
-                                <a class="navbar-item">Contact</a>
+                            <router-link tag="li" to="/carousel">
+                                <a class="navbar-item">Carousel</a>
                             </router-link>
                         </div>
                     </div>

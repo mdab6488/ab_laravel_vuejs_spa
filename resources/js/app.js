@@ -7,6 +7,8 @@ Vue.component(
     require('./components/menu-list-scoped.vue').default
 );
 
+Vue.component('carousal', require('./components/Carousel-slider.vue').default);
+
 const app = new Vue({
     el: '#app',
 
