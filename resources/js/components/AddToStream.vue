@@ -5,7 +5,9 @@
                 Push To The Stream
             </div>
             <div class="message-body">
-                <form @submit.prevent="onSubmit" @keydown="form.errors.clear()">
+                <form 
+                    @submit.prevent="onSubmit" 
+                    @keydown="form.errors.clear()">
                     <div class="field">
                         <label class="label">Message</label>
                         <div class="control">

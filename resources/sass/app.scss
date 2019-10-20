@@ -64,16 +64,18 @@ section{
                 display: inline-block;
                 margin-right: 26px;
                 margin-bottom: 15px;
+                &.active {
+                    img{
+                        border-color: #00D1B2;
+                        border-style: solid;
+                    }
+                }
                 img {
                     transition: .2s;
                     border-radius: 50%;
                     width: 62px;
                     border: 2px;
                     border-style: unset;
-                    &.active {
-                        border-color: #00D1B2;
-                        border-style: solid;
-                    }
                     &:hover {
                         border-color: #00D1B2;
                         border-style: solid;

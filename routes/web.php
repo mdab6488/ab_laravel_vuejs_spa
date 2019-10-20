@@ -21,3 +21,6 @@ Route::get('/', function () {
 
 Route::get('/statues', 'StatusController@index');
 Route::post('/statues', 'StatusController@store');
+
+Route::get('/reviews', 'ReviewsController@index');
+Route::post('/reviews', 'ReviewsController@store');

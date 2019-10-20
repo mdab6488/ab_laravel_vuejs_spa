@@ -70,17 +70,17 @@ section.hero {
   margin-bottom: 15px;
 }
 
+.testimonials .left ul li.active img {
+  border-color: #00D1B2;
+  border-style: solid;
+}
+
 .testimonials .left ul li img {
   transition: 0.2s;
   border-radius: 50%;
   width: 62px;
   border: 2px;
   border-style: unset;
-}
-
-.testimonials .left ul li img.active {
-  border-color: #00D1B2;
-  border-style: solid;
 }
 
 .testimonials .left ul li img:hover {
