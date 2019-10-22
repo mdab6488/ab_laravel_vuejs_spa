@@ -24,3 +24,12 @@ Route::post('/statues', 'StatusController@store');
 
 Route::get('/reviews', 'ReviewsController@index');
 Route::post('/reviews', 'ReviewsController@store');
+
+Route::get('/series', 'SeriesController@index');
+// Route::get('/series/{id}', 'SeriesController@show');
+// Route::post('/series', 'SeriesController@store');
+
+
+Route::get('/contact', 'ContactController@index');
+Route::post('/contact', 'ContactController@store');
+

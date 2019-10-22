@@ -7,6 +7,15 @@ h1 {
   margin-bottom: 20px;
 }
 
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.model-ab .v--modal {
+  height: 100vh !important;
+}
+
 nav {
   margin-bottom: 0px;
   padding: 0px 10px;
@@ -18,10 +27,16 @@ nav.navbar.menu-border {
 
 nav.navbar li {
   display: inline-block;
+  margin-bottom: -1px;
 }
 
 nav.navbar li a {
   padding: 15px;
+}
+
+nav.navbar li a:hover {
+  background: #4A4A4A;
+  color: #fff;
 }
 
 nav.navbar li.is-active a {
@@ -119,5 +134,53 @@ section.hero {
 
 .testimonials .right button {
   margin-top: 20px;
+}
+
+.megaMenuOneToOne {
+  background: #333333;
+  color: #fff;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  padding: 20px 0px;
+}
+
+.megaMenuOneToOne ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.megaMenuOneToOne .left ul li {
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 0px;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+.megaMenuOneToOne .left ul li.active {
+  color: #00D1B2;
+}
+
+.megaMenuOneToOne .left ul li:hover {
+  color: #00D1B2;
+}
+
+.megaMenuOneToOne .right ul li {
+  display: inline-block;
+  width: 45%;
+  padding: 2px 0px;
+}
+
+.megaMenuOneToOne .right ul li a {
+  font-size: 13px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.megaMenuOneToOne .right ul li:hover a {
+  color: #00D1B2;
 }
 

@@ -19,6 +19,10 @@ const routes = [
         path: '/testimonials_components',
         component: require('./views/TestimonialComp').default,
     },
+    {
+        path: '/mega_menus_on_to_one_relationship',
+        component: require('./views/MegaMenu').default,
+    },
 ];
 
 export default new VueRouter({
