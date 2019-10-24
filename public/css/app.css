@@ -211,3 +211,23 @@ section.hero {
   cursor: pointer;
 }
 
+.navbar.second-menu ul {
+  text-align: center;
+  width: 100%;
+}
+
+.navbar.second-menu ul li a {
+  color: #fff !important;
+}
+
+.is_sticky nav.navbar {
+  background: #fff !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.is_sticky nav.navbar ul li a {
+  color: #222 !important;
+}
+

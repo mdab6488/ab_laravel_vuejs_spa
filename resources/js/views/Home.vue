@@ -9,6 +9,40 @@
                     </p>
                 </div>
             </div>
+            <pinned>
+                <nav class="navbar menu-border second-menu" role="navigation" aria-label="main navigation">
+                    <ul class="">
+                        <li>
+                            <a
+                                href="https://www.facebook.com/"
+                                class="navbar-item">
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/"
+                                class="navbar-item">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com/"
+                                class="navbar-item">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://youtube.com/"
+                                class="navbar-item">
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </pinned>
         </section>
         <div class="container">
             <div class="box">
@@ -43,9 +77,9 @@
 <script>
     // Vue Filter Data
     import moment from 'moment';
-    import Status from '../models/Status'
+    import Status from '../models/Status';
 
-    import AddToStream from '../components/AddToStream'
+    import AddToStream from '../components/AddToStream';
 
     export default {
         components: { AddToStream },
@@ -79,6 +113,7 @@
                 window.scrollTo(0, 0);
             }
         },
+
     }
 
 

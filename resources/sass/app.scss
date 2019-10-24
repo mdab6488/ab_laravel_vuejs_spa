@@ -208,3 +208,35 @@ section{
         }
     }
 }
+
+
+.navbar{
+    &.second-menu {
+        ul {
+            text-align: center;
+            width: 100%;
+            li {
+                a {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+.is_sticky{
+    nav{
+        &.navbar{
+            background: #fff !important;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            ul {
+                li {
+                    a {
+                        color: #222 !important;
+                    }
+                }
+            }
+        }
+    }
+}

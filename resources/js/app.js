@@ -21,6 +21,8 @@ Vue.component(
 
 Vue.component('accordion', require('./components/accordion.vue').default);
 
+Vue.component('pinned', require('./components/Pinned.vue').default);
+
 const app = new Vue({
     el: '#app',
 
