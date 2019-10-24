@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2019 at 07:07 AM
+-- Generation Time: Oct 24, 2019 at 06:26 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -21,6 +21,35 @@ SET time_zone = "+00:00";
 --
 -- Database: `laravel_vuejs_spa`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `accordions`
+--
+
+CREATE TABLE `accordions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `question` text COLLATE utf8mb4_unicode_ci DEFAULT 'question',
+  `answer` text COLLATE utf8mb4_unicode_ci DEFAULT 'answer',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `accordions`
+--
+
+INSERT INTO `accordions` (`id`, `question`, `answer`, `created_at`, `updated_at`) VALUES
+(1, 'Who exactly are you?', 'My name is Jeffrey Way, and I\'ve been part of the Laravel community since the early days of version 3. I\'ve contributed to core, spoken at every single Laracon conference, am a co-host of the Laravel podcast, created popular packages, written countless tutorials, recorded courses for Tuts+, and have even written a popular book, called Laravel Testing Decoded. Additionally, I\'ve contributed (often, in some cases) to the two most popular web development print magazines in the world: .Net and Web Designer.\r\n\r\nMost importantly, though, I know how to explain complicated subjects. I\'ve spent many years learning how to do this. It\'s not easy, but, if you\'re struggling, I can help better than anyone.', '2019-10-23 18:00:00', '2019-10-23 18:00:00'),
+(2, 'Are any of the videos free?', 'Of course! Truthfully, I\'d love for all of the content to be free; however, the time investment (and infrastructure cost) is considerable. A small monthly fee allows me to dedicate as much energy as possible into providing the best PHP and Laravel content on the web.', NULL, NULL),
+(3, 'How often is Laracasts updated?', 'Typically, every single work day! Try to check the site at least once each work-day to find new content. You may view a chronological list of videos here.', NULL, NULL),
+(4, 'May I pay with Paypal?', 'For various reasons, Paypal is not a supported option at Laracasts currently. However, if it turns out that Paypal is the only way for you to sign up, I will manually accept payments with this method at 1-year intervals. See here, if you\'d like to arrange this.', NULL, NULL),
+(5, 'Do you offer group/business rates?', 'Absolutely! Laracasts would be a fantastic investment for your development team. You may view the business/group rates here.', NULL, NULL),
+(6, 'I love Laracasts! How can I help?', 'Thanks! Laracasts is a different kind of site. Most companies spend thousands on marketing to tell the world about their products. Laracasts spends zero; we rely entirely on word of mouth. If you enjoy the site, please tell your friends. Send an email, or tweet out a link to the site. I promise it helps!', NULL, NULL),
+(7, 'Can I upgrade from a monthly to yearly subscription?', '<p>Of course. Once logged in, you may <a href=\"https://laracasts.com/settings/subscription/plan\">upgrade your account here.</a></p>', NULL, NULL),
+(8, 'If I only dabble in Laravel, will I benefit from Laracasts?', 'My goodness, yes! Modern PHP techniques are laced throughout all lessons. In fact, plenty of the episodes focus exclusively on particular principles and tricks.', NULL, NULL),
+(9, 'How much is Laracasts, and what do you offer?', 'Laracasts follows a subscription model. $15 a month gives you access to the entire catalog of videos, as well as all new content that is released each month.', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -83,7 +112,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (4, '2019_10_17_205249_create_statuses_table', 1),
 (5, '2019_10_20_194855_create_reviews_table', 2),
 (6, '2019_10_21_214627_create_series_table', 3),
-(7, '2019_10_22_022322_create_contacts_table', 4);
+(7, '2019_10_22_022322_create_contacts_table', 4),
+(8, '2019_10_23_211803_create_accordions_table', 5);
 
 -- --------------------------------------------------------
 
@@ -266,6 +296,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 --
 
 --
+-- Indexes for table `accordions`
+--
+ALTER TABLE `accordions`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
@@ -319,6 +355,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `accordions`
+--
+ALTER TABLE `accordions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
@@ -334,7 +376,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `reviews`
