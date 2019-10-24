@@ -12,6 +12,10 @@ h1 {
   padding-bottom: 60px;
 }
 
+.p-30 {
+  padding: 30px;
+}
+
 .model-ab .v--modal {
   height: 100vh !important;
 }
@@ -229,5 +233,11 @@ section.hero {
 
 .is_sticky nav.navbar ul li a {
   color: #222 !important;
+}
+
+.tooltip .tooltip-inner {
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
 }
 
