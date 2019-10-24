@@ -19,6 +19,8 @@ Vue.component(
     require('./components/SupportButton.vue').default
 );
 
+Vue.component('accordion', require('./components/accordion.vue').default);
+
 const app = new Vue({
     el: '#app',
 

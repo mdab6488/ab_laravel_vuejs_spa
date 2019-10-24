@@ -16,8 +16,7 @@
     <body>
         <div class="main">
             <div id="app">
-                @include('nav.index')
-                <router-view></router-view>
+                @yield('content')
             </div>
         </div>
         <script src="/js/app.js"></script>

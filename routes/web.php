@@ -33,3 +33,4 @@ Route::get('/series', 'SeriesController@index');
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');
 
+Route::get('/faq', 'AccordionController@index');

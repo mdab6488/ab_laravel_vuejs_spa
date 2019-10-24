@@ -177,3 +177,34 @@ section{
         }
     }
 }
+
+
+.accordion {
+    margin-bottom: 35px;
+    .columns {
+        .column {
+            padding: 0px;
+        }
+    }
+    .question {
+        button {
+            border-radius: 50%;
+            border: navajowhite;
+            width: 35px;
+            height: 35px;
+            line-height: 40px;
+            background: #f3f3f3;
+            color: #fff;
+        }
+    }
+    .answer {
+        h3 {
+            font-size: 18px;
+            color: #333;
+            padding-top: 2px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+}

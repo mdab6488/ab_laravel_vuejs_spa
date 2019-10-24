@@ -26,6 +26,13 @@
             </router-link>
             <series-dropdown></series-dropdown>
             <support-button></support-button>
+            <li>
+                <a
+                    href="/faq"
+                    class="navbar-item">
+                    Faq
+                </a>
+            </li>
         </div>
     </div>
 </nav>
